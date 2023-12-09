@@ -1,0 +1,27 @@
+article p:first-of-type{
+	color: red;
+	font-size: 1.5em;
+}
+
+.BoxDiv {
+width: max-content;
+height: max-content;
+padding: 2;
+border: 1px solid;
+margin:2;
+}
+.BoxDiv:hover{
+outline: 5px dotted pink;
+}
+
+.BADiv::before{
+	content: "Prefix";
+}
+
+.BADiv::after{
+	content: "Suffix";
+}
+
+
+
+
