@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+article p:first-of-type{
+    color:red;
+    font-size:1.5em;
+}
+
+a:hover{
+outline: solid 2px; 
+color:green;
+}
+
+strong::after{
+    content:' - Suffix'
+}
+        </style>
+    </head>
+    <body>
+        <article>
+            <h2>This is something I like</h2>
+            <p>Ice-cream, something else, etc</p>
+            <a href="https://google.com">Google url</a>
+            <strong>This is the strong one</strong>
+        </article>
+    </body>
+</html>
