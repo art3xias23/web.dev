@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .top div {
+                padding-left:2em;
+            }
+
+            .top p {
+                background: #fff;
+                padding:0.5em;
+            }
+
+            .top div {
+  background: var(--color-primary-x-light);
+  border-top: 1px solid var(--color-primary);
+  border-left: 1px solid var(--color-primary);
+}
+
+
+.top > div {
+  border-bottom: 1px solid var(--color-primary);
+  border-right: 1px solid var(--color-primary);
+}
+
+.top p {
+  text-align: left;
+  border-left: 1px solid var(--color-primary);
+}
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Some article title</h1>
+                <figure class="call-out"></figure>
+                <div class="top box">
+                    <div>
+                        <p>1 level deep</p>
+                        <div>
+                            <p>2 level deep</p>
+                            <div>
+                                <p>3 level deep</p>
+                            </div>
+                        </div>
+                    <div>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
