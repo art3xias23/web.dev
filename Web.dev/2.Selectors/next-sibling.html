@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+.top p{
+    border: solid 2px;
+}
+
+.top :first-child{
+    outline:1px solid #9d0600;
+}
+
+.top * + * {
+margin-top: 1.5em;
+color:red;
+}
+
+ .test > div {
+outline: 1px solid orange;
+ }
+</style>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Some article title</h1>
+                <figure class="call-out"></figure>
+                <div class="top box">
+                    <div>
+                        <p>I have no margin beacuse I am the first child</p>
+                        <div>
+                            <p>I have margin-top as i am the next sibling</p>
+                            <div>
+                                <p>I am also a next sibling</p>
+                            </div>
+                        </div>
+                    <div>
+                </div>
+            </article>
+        </div>
+        <div class="test">
+            <div>
+                <p>Something</p>
+            </div>
+            <div>
+                <p>Something else</p>
+            </div>
+            <div>
+                <p>Something third</p>
+            </div>
+        </div>
+    </body>
+</html>
