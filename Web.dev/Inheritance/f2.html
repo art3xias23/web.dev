@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            html{
+                color: lightslategray;
+            }
+
+            body{
+                font-size: 1.2em;
+            }
+            p{
+                font-style:italic;
+                text-indent: 10px;
+            }
+
+            strong{
+                font-weight: 900;
+            }
+
+            .my-component{
+                
+                font-weight: 500;
+            }
+
+            .my-component strong{
+                font-weight: inherit;
+            }
+
+            aside strong{
+                font-weight: initial;
+            }
+        </style>
+    </head>
+    <body>
+      <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="my-component">
+            <strong>This is the strong sentence within my component</strong>
+        </div>
+
+        <strong>This is a normal strong sentence</strong>
+
+        <aside>
+            <strong>This is a strong line within an aside tag</strong>
+        </aside>
+
+      </article>
+    </body>
+  </html>
