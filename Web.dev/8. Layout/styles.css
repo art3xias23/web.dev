@@ -1,0 +1,13 @@
+.checkbox{
+    display:inline
+}
+
+.main{
+    margin:2rem 0rem;
+    display:flex;
+}
+
+.item{
+    border:3px solid;
+    background-color:white;
+}

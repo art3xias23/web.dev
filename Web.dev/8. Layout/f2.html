@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1>This is how we would use different flexbox mechanics</h1>
+        <div class="checkbox">
+            <label>Wrap</label>
+            <input type="checkbox" role="switch"/>
+        </div>
+        <div class="checkbox">
+            <label>Align Items in the center</label>
+            <input type="checkbox" role="switch"/>
+        </div>
+        <div class="checkbox">
+            <label>Add space between</label>
+            <input type="checkbox" role="switch"/>
+        </div>
+        <div class="main">
+                <div class="item">First Item</div>
+                <div class="item">Second Item</div>
+                <div class="item">Third Item has a bit more text</div>
+                <div class="item">Fourth Item</div>
+                <div class="item">Fifth Item</div>
+                <div class="item">Sixth Item</div>
+        </div>
+    </body>
+
+    <script>
+const actions = document.querySelectorAll('[role="switch"]');
+const main = document.querySelector(".main")
+    </script>
+
+</html>
