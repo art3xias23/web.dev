@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="justify.css" />
+  </head>
+  <body>
+    <div class="chbx">
+      <span>Flex-Start</span>
+      <input type="checkbox" role="switch" id="flex-start"  />
+    </div>
+    <div class="chbx">
+      <span>Flex-End</span>
+      <input type="checkbox" role="switch" id="flex-end"  />
+    </div>
+    <div class="chbx">
+      <span>Center</span>
+      <input type="checkbox" role="switch" id="center"  />
+    </div>
+    <div class="chbx">
+      <span>Space-Between</span>
+      <input type="checkbox" role="switch" id="space-between"  />
+    </div>
+    <div class="chbx">
+      <span>Space-Around</span>
+      <input type="checkbox" role="switch" id="space-around"  />
+    </div>
+    <div class="chbx">
+      <span>Space-Evenly</span>
+      <input type="checkbox" role="switch" id="space-evenly"  />
+    </div>
+    <div class="container">
+      <div class="item">0</div>
+      <div class="item">1</div>
+    </div>
+  </body>
+  <script>
+    const actionItems = document.querySelectorAll(`[role="switch"]`)
+    const container = document.querySelector('.container')
+
+    actionItems.forEach(item => {
+        item.addEventListener("change", () =>{
+            if(item.checked){
+                container.setAttribute(`data-${item.getAttribute("id")}`, "")
+            }else{
+                container.removeAttribute(`data-${item.getAttribute("id")}`)
+            }
+        })
+    })
+  </script>
+</html>

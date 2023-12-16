@@ -1,0 +1,36 @@
+.chbx{
+    display:inline;
+}
+
+.item{
+    border:2px solid;
+    width:450px;
+}
+
+.container[data-flex-start]{
+    justify-content: flex-start;
+}
+
+.container[data-flex-end]{
+    justify-content: flex-end;
+}
+
+.container[data-center]{
+    justify-content: center;
+}
+
+.container[data-space-between]{
+    justify-content: space-between;
+}
+
+.container[data-space-around]{
+    justify-content: space-around;
+}
+
+.container[data-space-evenly]{
+    justify-content: space-evenly;
+}
+
+.container{
+    display:flex;
+}
