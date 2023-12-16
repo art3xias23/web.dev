@@ -1,5 +1,5 @@
 .checkbox{
-    display:inline
+    display:block;
 }
 
 .main{
@@ -8,6 +8,19 @@
 }
 
 .item{
+    width: 450px;
     border:3px solid;
     background-color:white;
 }
+
+.main[data-flex-wrap] {
+    flex-wrap: wrap;
+  }
+  
+  .main[data-space] {
+    justify-content: space-between;
+  }
+  
+  .main[data-align-center] {
+    align-items: center;
+  }

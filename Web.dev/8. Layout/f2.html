@@ -7,17 +7,17 @@
     </head>
     <body>
         <h1>This is how we would use different flexbox mechanics</h1>
-        <div class="checkbox">
+        <div class="my-element">
             <label>Wrap</label>
-            <input type="checkbox" role="switch"/>
+            <input type="checkbox" role="switch" id="flex-wrap"/>
         </div>
-        <div class="checkbox">
+        <div class="my-element">
             <label>Align Items in the center</label>
-            <input type="checkbox" role="switch"/>
+            <input type="checkbox" role="switch" id="align-center"/>
         </div>
-        <div class="checkbox">
+        <div class="my-element">
             <label>Add space between</label>
-            <input type="checkbox" role="switch"/>
+            <input type="checkbox" role="switch" id="space"/>
         </div>
         <div class="main">
                 <div class="item">First Item</div>
@@ -32,6 +32,16 @@
     <script>
 const actions = document.querySelectorAll('[role="switch"]');
 const main = document.querySelector(".main")
+
+actions.forEach((item) => {
+    item.addEventListener("change", ()=> {
+        if (item.checked){
+            main.setAttribute(`data-${item.getAttribute("id")}`,"")
+        }else{
+            main.removeAttribute(`data-${item.getAttribute("id")}`)
+        }
+    })
+})
     </script>
 
 </html>
