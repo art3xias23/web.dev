@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.container{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    max-width: 500px;
+    gap:1rem;
+}
+
+.container div{
+    background-color: lightgray;
+    border: 1px solid;
+    align-self: stretch; /* Stretch the items vertically */
+  justify-self: stretch; 
+}
+
+.container :first-child{
+    grid-row:1/3;
+    grid-column:1/4;
+}
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <div>ITEM1</div>
+            <div>ITEM2</div>
+            <div>ITEM3</div>
+            <div>ITEM4</div>
+            <div>ITEM5</div>
+            <div>ITEM6</div>
+            <div>ITEM7</div>
+            <div>ITEM8</div>
+            <div>ITEM9</div>
+            <div>ITEM10</div>
+            <div>ITEM11</div>
+            <div>ITEM12</div>
+        </div>
+    </body>
+</html>
