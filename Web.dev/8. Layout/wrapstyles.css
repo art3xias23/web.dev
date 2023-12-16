@@ -1,0 +1,24 @@
+.chbx{
+    display:inline;
+}
+
+.item{
+    border:2px solid;
+    width:450px;
+}
+
+.container[data-wrap]{
+    flex-wrap: wrap;
+}
+
+.container[data-nowrap]{
+    flex-wrap: nowrap;
+}
+
+.container[data-wrap-reverse]{
+    flex-wrap: wrap-reverse;
+}
+
+.container{
+    display:flex;
+}
