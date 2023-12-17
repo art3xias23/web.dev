@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #spann {
+      position: relative;
+      background-color: lightseagreen;
+      top: 10px;
+    }
+
+    body{
+        height:200px;
+    }
+
+    body div {
+      display: inline-block;
+      margin: 0px 20px;
+    }
+
+    .container {
+      background-color: bisque;
+      width: 500px;
+      height: 200px;
+      position: relative;
+      /* vertical-align: top; */
+    }
+
+    #abs {
+      position: absolute;
+      background-color: aquamarine;
+      /* No top, left, right, or bottom specified */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-decoration: underline">
+      Relative `your` text to itself.
+    </h1>
+    <p>Hello what is <span id="spann">your </span>name</p>
+  </div>
+  <div class="container">
+    <h1 style="text-decoration: underline">
+      Relative parent with absolute child
+    </h1>
+    <p id="abs">Hello what is your name</p>
+  </div>
+</body>
+</html>
