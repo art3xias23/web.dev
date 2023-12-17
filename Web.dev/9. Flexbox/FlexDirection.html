@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container * {
+        display: inline;
+      }
+
+      .items {
+        display: flex;
+      }
+
+      .items div {
+        background-color: khaki;
+        border-radius: 10%;
+        border: 1px solid;
+        margin:0px 10px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>The choice is</p>
+      <select id="switch">
+        <option value="row">Row</option>
+        <option value="row-reverse">Row-revese</option>
+        <option value="column">Column</option>
+        <option value="column-reverse">Column-Reverse</option>
+      </select>
+    </div>
+
+    <div class="items">
+      <div>Item 1</div>
+      <div>Item something about thise here 2</div>
+      <div>Item smaller 3</div>
+      <div>Item bigger and then some 4</div>
+    </div>
+    <script>
+      const itemsDiv = document.querySelector(".items");
+      const select = document.querySelector("#switch");
+
+      select.addEventListener("change", (evt) => {
+        itemsDiv.style.flexDirection = evt.target.value;
+      });
+    </script>
+  </body>
+</html>
