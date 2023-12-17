@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .flex-item {
+      height: 50px;
+      border: 1px solid black;
+      margin: 5px;
+    }
+
+    .flex-item-zero {
+      flex: 1 1 0; /* flex-grow: 1; flex-shrink: 1; flex-basis: 0; */
+      background-color: lightblue;
+    }
+
+    .flex-item-auto {
+      flex: 1 1 auto; /* flex-grow: 1; flex-shrink: 1; flex-basis: auto; */
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="flex-item flex-item-zero">Flex Item with flex-basis: 0;</div>
+    <div class="flex-item flex-item-auto">Flex Item with flex-basis: auto;</div>
+  </div>
+
+</body>
+</html>
