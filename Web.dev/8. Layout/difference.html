@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .bb {
+        margin: 20px;
+        width: 100;
+      }
+
+      #inline div {
+        border: 1px solid;
+        background-color: plum;
+        display: inline;
+        height: 400px;
+      }
+
+      #inline-block div {
+        border: 1px solid;
+        background-color: lightblue;
+        display: inline-block;
+        height: 100px;      
+        width:100;
+      } 
+       #block div {
+        border: 1px solid;
+        background-color: lightgreen;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bb" id="inline">
+      <div>Inline 1</div>
+      <div>Inline 2</div>
+      <div>Inline 3</div>
+      <div>Inline 4</div>
+    </div>
+    <div class="bb" id="inline-block">
+      <div>Inline-block 1</div>
+      <div>Inline-block 2</div>
+      <div>Inline-block 3</div>
+      <div>Inline-block 4</div>
+    </div>
+    <div class="bb" id="block">
+      <div>Block 1</div>
+      <div>Block 2</div>
+      <div>Block 3</div>
+      <div>Block 4</div>
+    </div>
+  </body>
+</html>

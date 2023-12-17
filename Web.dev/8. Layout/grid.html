@@ -1,2 +1,32 @@
 <!DOCTYPE html>
-<ht
+<html>
+  <head>
+    <style>
+.container{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.container div{
+    background-color:aquamarine;
+    margin:20px;
+}
+
+.container :first-child{
+    grid-row:1/5;
+    grid-column:1/4;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div>Item1</div>
+        <div>Item2</div>
+        <div>Item3</div>
+        <div>Item4</div>
+        <div>Item5</div>
+        <div>Item6</div>
+    </div>
+  </body>
+</html>
