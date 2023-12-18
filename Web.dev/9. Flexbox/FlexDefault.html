@@ -2,68 +2,71 @@
 <html>
   <head>
     <style>
-        .container{
-            display:flex;
-        }
+      .container {
+        display: flex;
+      }
 
-        #one div{
-            border:2px solid;
-            background-color:antiquewhite;
-            flex:1;
-        }
+      #one div {
+        border: 2px solid;
+        background-color: antiquewhite;
+        flex: 1;
+      }
 
-        #two div{
-            border:2px solid;
-            background-color:antiquewhite;
-            flex:initial;
-        }
+      #two div {
+        border: 2px solid;
+        background-color: antiquewhite;
+        flex: initial;
+      }
 
-        #three div{
-            border:2px solid;
-            background-color:antiquewhite;
-            flex:auto;
-        }
+      #three div {
+        border: 2px solid;
+        background-color: antiquewhite;
+        flex: auto;
+      }
 
-        #four div{
-            border:2px solid;
-            background-color:antiquewhite;
-            flex:none;
-        }
-        .container *{
-            margin:10px 0px;     
-        }    
-        body{
-        }
-        </style>
+      #four div {
+        border: 2px solid;
+        background-color: antiquewhite;
+        flex: none;
+      }
+      .container * {
+        margin: 10px 0px;
+      }
+      .main{
+        background-color: rgb(179, 216, 248);
+      }
+    </style>
   </head>
   <body>
-    <div class="container" id="one">
-       <h1>Flex:1 (Growth:1, Shrink:1, Basis:0%)</h1>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1dfdskfhdsjfkdsjfljuewoiuroewiurworwei</div>
-    </div>
-    <div class="container" id="two">
+    <div class="main">
+      <div class="container" id="one">
+        <h1>Flex:1 (Growth:1, Shrink:1, Basis:0%)</h1>
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1dfdskfhdsjfkdsjfljuewoiuroewiurworwei</div>
+      </div>
+      <div class="container" id="two">
         <h1>Flex:initial (Growth:0, Shrink:1, Basis:auto)</h1>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1</div>
-    </div>
-    <div class="container" id="three">
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+      </div>
+      <div class="container" id="three">
         <h1>Flex:initial (Growth:1, Shrink:1, Basis:auto)</h1>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1fjsdlkfdlkfjdslkfjsdlfjdslkfjdslkfjdslkfjdskldsf</div>
-    </div>
-    <div class="container" id="four">
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1fjsdlkfdlkfjdslkfjsdlfjdslkfjdslkfjdslkfjdskldsf</div>
+      </div>
+      <div class="container" id="four">
         <h1>Flex:initial (Growth:0, Shrink:0, Basis:auto)</h1>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1</div>
-      <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+        <div>Item1</div>
+      </div>
     </div>
   </body>
 </html>
