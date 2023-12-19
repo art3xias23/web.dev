@@ -6,22 +6,31 @@
     <style>
       .container {
         display: flex;
+        gap:1rem;
         border:1px solid;
+      }
+
+      .container div{
+        height:100px;
       }
       .one {
         background-color: red;
-        flex-basis: 200px;
+        flex-basis: 100px;
         border:2px solid;
       }
 
       .two {
         background-color: blue;
-        flex-basis: 200px;
+        flex-basis: 100px;
+        flex-grow:3;
+        border:2px solid;
       }
 
       .three {
         background-color: green;
-        flex-basis: 200px;
+        flex-basis: auto;
+        flex-grow:1;
+        border:2px solid;
       }
     </style>
   </head>
@@ -29,7 +38,7 @@
     <div class="container">
       <div class="one"></div>
       <div class="two"></div>
-      <div class="three"></div>
+      <div class="three">Hello my name is koce</div>
     </div>
   </body>
 </html>
