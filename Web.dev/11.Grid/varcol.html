@@ -1,5 +1,36 @@
-<body>
-    <div class="container">
+<style>
+    #container{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        grid-template-rows:200px auto;
+        max-width: 200px;
+        gap:1px;
+    }
+    #container div{
+        background-color:lightgreen;
+        border:2px solid;
+    }
+</style>
 
+<body>
+    <div id="choice">
+        <select id="choices">
+            <option role="switch" value="auto">Auto</option>
+            <option role="switch" value="min-content">min-content</option>
+            <option role="switch" value="max-content">max-content</option>
+            <option role="switch" value="fit-content(10em)">fit-content(7em)</option>
+        </select>
+    </div>
+    <div id="container">
+        <div class="item">Item One</div>
+        <div class="item">Item Twowoowowow hjfhds ajdfjdskfds</div>
     </div>
 </body>
+<script>
+    const root = document.documentElement
+    const container = document.getElementById("container")
+
+    choices.addEventListener("change" , (evt) =>{
+        root.style.setProperty("--var-col", evt.target.value)
+    })
+    </script>
