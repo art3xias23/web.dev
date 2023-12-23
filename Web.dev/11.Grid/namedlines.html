@@ -1,0 +1,24 @@
+<head>
+    <style>
+.container{
+    display:grid;
+    gap:10px;
+    grid-template-columns:
+        [main-start aside-start] 1fr
+        [aside-end content-start] 2fr
+        [content-end main-end];
+}
+.container div{
+    background-color: aquamarine;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+</body>
