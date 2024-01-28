@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <style>
+      @font-face {
+        font-family: "Yese";
+        src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "Ov";
+        src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+          format("truetype");
+        font-size: large;
+        font-weight: 300;
+      }
+
+      body {
+        background-color: rgb(250, 232, 208);
+        font-family: "Ov";
+      }
+
+      .title {
+        font-family: "Yese";
+      }
+
+      .main-img {
+        height: 330px;
+        width: 95%;
+      }
+
+      .custom-container {
+        width: 40%;
+      }
+
+      .prep-container{
+        background-color: #faebf5;
+      }
+
+      .prep-title{
+        color:#9d5275;
+        font-size:1.1rem;
+      }
+    </style>
+
+    <title>Frontend Mentor | Recipe page</title>
+  </head>
+  <body>
+    <main
+      name="white-card"
+      class="container custom-container bg-white rounded-4 mt-5"
+    >
+      <div
+        name="white-card-content"
+        class="mx-auto text-center jusify-content-"
+      >
+        <div>
+          <img
+            src="assets/images/image-omelette.jpeg"
+            class="main-img img-fluid mt-4 rounded-4"
+          />
+        </div>
+
+        <div class="container">
+          <div class="display-6 title text-start mt-4 mb-4">
+            Simple Omelette Recipe
+          </div>
+        </div>
+        <div class="p1 text-start ms-3">
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+        </div>
+        <div name="prep" class="container text-start prep-container">
+          <div class="title ms-4 mb-3 pt-4 prep-title">Preparation time</div>
+          <ul>
+            <li><span class="ps-4" style="font-weight: bold" >Total:</span> Approximately 10 minutes</li>
+            <li><span class="ps-4" style="font-weight: bold">Preparation:</span> 5 minutes </li>
+            <li><span class="ps-4" style="font-weight: bold">Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    Ingredients 2-3 large eggs Salt, to taste Pepper, to taste 1 tablespoon of
+    butter or oil Optional fillings: cheese, diced vegetables, cooked meats,
+    herbs Instructions Beat the eggs: In a bowl, beat the eggs with a pinch of
+    salt and pepper until they are well mixed. You can add a tablespoon of water
+    or milk for a fluffier texture. Heat the pan: Place a non-stick frying pan
+    over medium heat and add butter or oil. Cook the omelette: Once the butter
+    is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
+    evenly coat the surface. Add fillings (optional): When the eggs begin to set
+    at the edges but are still slightly runny in the middle, sprinkle your
+    chosen fillings over one half of the omelette. Fold and serve: As the
+    omelette continues to cook, carefully lift one edge and fold it over the
+    fillings. Let it cook for another minute, then slide it onto a plate. Enjoy:
+    Serve hot, with additional salt and pepper if needed. Nutrition The table
+    below shows nutritional values per serving without the additional fillings.
+    Calories 277kcal Carbs 0g Protein 20g Fat 22g
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
