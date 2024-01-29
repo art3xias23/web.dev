@@ -54,13 +54,16 @@
         width: 40%;
       }
 
-      .prep-container{
+      .prep-container {
         background-color: #faebf5;
       }
 
-      .prep-title{
-        color:#9d5275;
-        font-size:1.1rem;
+      .prep-title {
+        color: #9d5275;
+      }
+
+      .ingredients li {
+        padding-left: 20px;
       }
     </style>
 
@@ -75,7 +78,7 @@
         name="white-card-content"
         class="mx-auto text-center jusify-content-"
       >
-        <div>
+        <div class="container p-3">
           <img
             src="assets/images/image-omelette.jpeg"
             class="main-img img-fluid mt-4 rounded-4"
@@ -94,22 +97,67 @@
             your choice of cheese, vegetables, or meats.
           </p>
         </div>
-        <div name="prep" class="container text-start prep-container">
-          <div class="title ms-4 mb-3 pt-4 prep-title">Preparation time</div>
-          <ul>
-            <li><span class="ps-4" style="font-weight: bold" >Total:</span> Approximately 10 minutes</li>
-            <li><span class="ps-4" style="font-weight: bold">Preparation:</span> 5 minutes </li>
-            <li><span class="ps-4" style="font-weight: bold">Cooking:</span> 5 minutes</li>
+        <section class="prep-container rounded-2">
+          <div name="prep" class="container-fluid text-start p-2">
+            <div class="title ms-4 pt-4 prep-title">Preparation time</div>
+            <ul>
+              <li>
+                <span class="ps-4" style="font-weight: bold">Total:</span>
+                Approximately 10 minutes
+              </li>
+              <li>
+                <span class="ps-4" style="font-weight: bold">Preparation:</span>
+                5 minutes
+              </li>
+              <li>
+                <span class="ps-4" style="font-weight: bold">Cooking:</span> 5
+                minutes
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- Ingredients -->
+      <section class="py-4">
+        <div class="container">
+          <h2 class="title prep-title">Ingredients</h2>
+          <ul class="ingredients">
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings, cheese, dived vegerables, cooked meats, herbs
+            </li>
           </ul>
         </div>
-      </div>
+      </section>
+
+      <!-- Some Line -->
+      <hr class="m-1 text-secondary" />
+
+      <!-- Section Instructions -->
+
+      <section class="py-4">
+        <div class="container">
+          <h2 class="title prep-title">Instructions</h2>
+          <div class="container">
+            <div class="ordered-item">
+              <span class="prep-title fw-bold fs-5">1.</span>
+               <span class="align-top ms-5 text-center"> <span class="fw-bold fs-7 ps-4 text-right">Beat the eggs:</span>
+                In a bowl, beat the eggs with a pinch of salt and pepper until
+                they are well mixed. You can add a tablespoon of water or milk
+                for a fluffier texture.
+              </span>
+          </div>
+        </div>
+      </section>
     </main>
 
-    Ingredients 2-3 large eggs Salt, to taste Pepper, to taste 1 tablespoon of
+    <!-- 
+      2-3 large eggs Salt, to taste Pepper, to taste 1 tablespoon of
     butter or oil Optional fillings: cheese, diced vegetables, cooked meats,
-    herbs Instructions Beat the eggs: In a bowl, beat the eggs with a pinch of
-    salt and pepper until they are well mixed. You can add a tablespoon of water
-    or milk for a fluffier texture. Heat the pan: Place a non-stick frying pan
+    herbs Instructions Beat the eggs: Heat the pan: Place a non-stick frying pan
     over medium heat and add butter or oil. Cook the omelette: Once the butter
     is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
     evenly coat the surface. Add fillings (optional): When the eggs begin to set
@@ -119,7 +167,8 @@
     fillings. Let it cook for another minute, then slide it onto a plate. Enjoy:
     Serve hot, with additional salt and pepper if needed. Nutrition The table
     below shows nutritional values per serving without the additional fillings.
-    Calories 277kcal Carbs 0g Protein 20g Fat 22g
+    Calories 277kcal Carbs 0g Protein 20g Fat 22g 
+  -->
 
     <div class="attribution">
       Challenge by
